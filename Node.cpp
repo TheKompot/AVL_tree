@@ -1,5 +1,3 @@
 #include "Node.h"
 
-Node::Node(int val,Node *right=nullptr,Node *left=nullptr){
-
-}
+Node::Node(int val,Node *right,Node *left): value(val),right(right),left(left){}
