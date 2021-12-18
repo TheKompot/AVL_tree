@@ -6,13 +6,19 @@
 
 #IncludeRegexTransform: 
 
+/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/BST.cpp
+BST.h
+/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/BST.h
+
+/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/BST.h
+iostream
+-
+Tree.h
+/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/Tree.h
+
 /cygdrive/c/Users/rudol/Desktop/programovanie/projekt/Node.h
 iostream
 -
-
-/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/Tree.cpp
-Tree.h
-/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/Tree.h
 
 /cygdrive/c/Users/rudol/Desktop/programovanie/projekt/Tree.h
 iostream

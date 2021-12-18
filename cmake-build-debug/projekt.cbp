@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/BST.cpp">
+			<Option target="projekt"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/BST.h">
+			<Option target="projekt"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/GoogleTest/gtest-death-test.cc">
 			<Option target="projekt"/>
 		</Unit>
@@ -116,6 +122,9 @@
 			<Option target="projekt"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/Tree.h">
+			<Option target="projekt"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/tests_BST.cpp">
 			<Option target="projekt"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/tests_Node.cpp">

@@ -47,6 +47,7 @@ TEST(Tree_test,moreNodes){
 TEST(Tree_test,getEmptyTree){
     Tree *t = new Tree();
     ASSERT_EQ(nullptr,t->get_all());
+    delete t;
 }
 
 TEST(Tree_test,getOnlyRoot){

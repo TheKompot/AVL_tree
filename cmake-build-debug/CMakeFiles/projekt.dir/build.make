@@ -92,9 +92,22 @@ CMakeFiles/projekt.dir/Tree.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/projekt.dir/Tree.cpp.s"
 	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/rudol/Desktop/programovanie/projekt/Tree.cpp -o CMakeFiles/projekt.dir/Tree.cpp.s
 
+CMakeFiles/projekt.dir/BST.cpp.o: CMakeFiles/projekt.dir/flags.make
+CMakeFiles/projekt.dir/BST.cpp.o: ../BST.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/projekt.dir/BST.cpp.o"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/projekt.dir/BST.cpp.o -c /cygdrive/c/Users/rudol/Desktop/programovanie/projekt/BST.cpp
+
+CMakeFiles/projekt.dir/BST.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/projekt.dir/BST.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/rudol/Desktop/programovanie/projekt/BST.cpp > CMakeFiles/projekt.dir/BST.cpp.i
+
+CMakeFiles/projekt.dir/BST.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/projekt.dir/BST.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/rudol/Desktop/programovanie/projekt/BST.cpp -o CMakeFiles/projekt.dir/BST.cpp.s
+
 CMakeFiles/projekt.dir/tests_Node.cpp.o: CMakeFiles/projekt.dir/flags.make
 CMakeFiles/projekt.dir/tests_Node.cpp.o: ../tests_Node.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/projekt.dir/tests_Node.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/projekt.dir/tests_Node.cpp.o"
 	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/projekt.dir/tests_Node.cpp.o -c /cygdrive/c/Users/rudol/Desktop/programovanie/projekt/tests_Node.cpp
 
 CMakeFiles/projekt.dir/tests_Node.cpp.i: cmake_force
@@ -107,7 +120,7 @@ CMakeFiles/projekt.dir/tests_Node.cpp.s: cmake_force
 
 CMakeFiles/projekt.dir/tests_Tree.cpp.o: CMakeFiles/projekt.dir/flags.make
 CMakeFiles/projekt.dir/tests_Tree.cpp.o: ../tests_Tree.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/projekt.dir/tests_Tree.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/projekt.dir/tests_Tree.cpp.o"
 	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/projekt.dir/tests_Tree.cpp.o -c /cygdrive/c/Users/rudol/Desktop/programovanie/projekt/tests_Tree.cpp
 
 CMakeFiles/projekt.dir/tests_Tree.cpp.i: cmake_force
@@ -118,9 +131,22 @@ CMakeFiles/projekt.dir/tests_Tree.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/projekt.dir/tests_Tree.cpp.s"
 	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/rudol/Desktop/programovanie/projekt/tests_Tree.cpp -o CMakeFiles/projekt.dir/tests_Tree.cpp.s
 
+CMakeFiles/projekt.dir/tests_BST.cpp.o: CMakeFiles/projekt.dir/flags.make
+CMakeFiles/projekt.dir/tests_BST.cpp.o: ../tests_BST.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/projekt.dir/tests_BST.cpp.o"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/projekt.dir/tests_BST.cpp.o -c /cygdrive/c/Users/rudol/Desktop/programovanie/projekt/tests_BST.cpp
+
+CMakeFiles/projekt.dir/tests_BST.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/projekt.dir/tests_BST.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/rudol/Desktop/programovanie/projekt/tests_BST.cpp > CMakeFiles/projekt.dir/tests_BST.cpp.i
+
+CMakeFiles/projekt.dir/tests_BST.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/projekt.dir/tests_BST.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/rudol/Desktop/programovanie/projekt/tests_BST.cpp -o CMakeFiles/projekt.dir/tests_BST.cpp.s
+
 CMakeFiles/projekt.dir/GoogleTest/gtest-death-test.cc.o: CMakeFiles/projekt.dir/flags.make
 CMakeFiles/projekt.dir/GoogleTest/gtest-death-test.cc.o: ../GoogleTest/gtest-death-test.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/projekt.dir/GoogleTest/gtest-death-test.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/projekt.dir/GoogleTest/gtest-death-test.cc.o"
 	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/projekt.dir/GoogleTest/gtest-death-test.cc.o -c /cygdrive/c/Users/rudol/Desktop/programovanie/projekt/GoogleTest/gtest-death-test.cc
 
 CMakeFiles/projekt.dir/GoogleTest/gtest-death-test.cc.i: cmake_force
@@ -133,7 +159,7 @@ CMakeFiles/projekt.dir/GoogleTest/gtest-death-test.cc.s: cmake_force
 
 CMakeFiles/projekt.dir/GoogleTest/gtest-filepath.cc.o: CMakeFiles/projekt.dir/flags.make
 CMakeFiles/projekt.dir/GoogleTest/gtest-filepath.cc.o: ../GoogleTest/gtest-filepath.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/projekt.dir/GoogleTest/gtest-filepath.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/projekt.dir/GoogleTest/gtest-filepath.cc.o"
 	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/projekt.dir/GoogleTest/gtest-filepath.cc.o -c /cygdrive/c/Users/rudol/Desktop/programovanie/projekt/GoogleTest/gtest-filepath.cc
 
 CMakeFiles/projekt.dir/GoogleTest/gtest-filepath.cc.i: cmake_force
@@ -146,7 +172,7 @@ CMakeFiles/projekt.dir/GoogleTest/gtest-filepath.cc.s: cmake_force
 
 CMakeFiles/projekt.dir/GoogleTest/gtest-port.cc.o: CMakeFiles/projekt.dir/flags.make
 CMakeFiles/projekt.dir/GoogleTest/gtest-port.cc.o: ../GoogleTest/gtest-port.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/projekt.dir/GoogleTest/gtest-port.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/projekt.dir/GoogleTest/gtest-port.cc.o"
 	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/projekt.dir/GoogleTest/gtest-port.cc.o -c /cygdrive/c/Users/rudol/Desktop/programovanie/projekt/GoogleTest/gtest-port.cc
 
 CMakeFiles/projekt.dir/GoogleTest/gtest-port.cc.i: cmake_force
@@ -159,7 +185,7 @@ CMakeFiles/projekt.dir/GoogleTest/gtest-port.cc.s: cmake_force
 
 CMakeFiles/projekt.dir/GoogleTest/gtest-printers.cc.o: CMakeFiles/projekt.dir/flags.make
 CMakeFiles/projekt.dir/GoogleTest/gtest-printers.cc.o: ../GoogleTest/gtest-printers.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/projekt.dir/GoogleTest/gtest-printers.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/projekt.dir/GoogleTest/gtest-printers.cc.o"
 	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/projekt.dir/GoogleTest/gtest-printers.cc.o -c /cygdrive/c/Users/rudol/Desktop/programovanie/projekt/GoogleTest/gtest-printers.cc
 
 CMakeFiles/projekt.dir/GoogleTest/gtest-printers.cc.i: cmake_force
@@ -172,7 +198,7 @@ CMakeFiles/projekt.dir/GoogleTest/gtest-printers.cc.s: cmake_force
 
 CMakeFiles/projekt.dir/GoogleTest/gtest-test-part.cc.o: CMakeFiles/projekt.dir/flags.make
 CMakeFiles/projekt.dir/GoogleTest/gtest-test-part.cc.o: ../GoogleTest/gtest-test-part.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/projekt.dir/GoogleTest/gtest-test-part.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/projekt.dir/GoogleTest/gtest-test-part.cc.o"
 	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/projekt.dir/GoogleTest/gtest-test-part.cc.o -c /cygdrive/c/Users/rudol/Desktop/programovanie/projekt/GoogleTest/gtest-test-part.cc
 
 CMakeFiles/projekt.dir/GoogleTest/gtest-test-part.cc.i: cmake_force
@@ -185,7 +211,7 @@ CMakeFiles/projekt.dir/GoogleTest/gtest-test-part.cc.s: cmake_force
 
 CMakeFiles/projekt.dir/GoogleTest/gtest-typed-test.cc.o: CMakeFiles/projekt.dir/flags.make
 CMakeFiles/projekt.dir/GoogleTest/gtest-typed-test.cc.o: ../GoogleTest/gtest-typed-test.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/projekt.dir/GoogleTest/gtest-typed-test.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/projekt.dir/GoogleTest/gtest-typed-test.cc.o"
 	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/projekt.dir/GoogleTest/gtest-typed-test.cc.o -c /cygdrive/c/Users/rudol/Desktop/programovanie/projekt/GoogleTest/gtest-typed-test.cc
 
 CMakeFiles/projekt.dir/GoogleTest/gtest-typed-test.cc.i: cmake_force
@@ -198,7 +224,7 @@ CMakeFiles/projekt.dir/GoogleTest/gtest-typed-test.cc.s: cmake_force
 
 CMakeFiles/projekt.dir/GoogleTest/gtest.cc.o: CMakeFiles/projekt.dir/flags.make
 CMakeFiles/projekt.dir/GoogleTest/gtest.cc.o: ../GoogleTest/gtest.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/projekt.dir/GoogleTest/gtest.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/projekt.dir/GoogleTest/gtest.cc.o"
 	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/projekt.dir/GoogleTest/gtest.cc.o -c /cygdrive/c/Users/rudol/Desktop/programovanie/projekt/GoogleTest/gtest.cc
 
 CMakeFiles/projekt.dir/GoogleTest/gtest.cc.i: cmake_force
@@ -211,7 +237,7 @@ CMakeFiles/projekt.dir/GoogleTest/gtest.cc.s: cmake_force
 
 CMakeFiles/projekt.dir/GoogleTest/gtest_main.cc.o: CMakeFiles/projekt.dir/flags.make
 CMakeFiles/projekt.dir/GoogleTest/gtest_main.cc.o: ../GoogleTest/gtest_main.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/projekt.dir/GoogleTest/gtest_main.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/projekt.dir/GoogleTest/gtest_main.cc.o"
 	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/projekt.dir/GoogleTest/gtest_main.cc.o -c /cygdrive/c/Users/rudol/Desktop/programovanie/projekt/GoogleTest/gtest_main.cc
 
 CMakeFiles/projekt.dir/GoogleTest/gtest_main.cc.i: cmake_force
@@ -226,8 +252,10 @@ CMakeFiles/projekt.dir/GoogleTest/gtest_main.cc.s: cmake_force
 projekt_OBJECTS = \
 "CMakeFiles/projekt.dir/Node.cpp.o" \
 "CMakeFiles/projekt.dir/Tree.cpp.o" \
+"CMakeFiles/projekt.dir/BST.cpp.o" \
 "CMakeFiles/projekt.dir/tests_Node.cpp.o" \
 "CMakeFiles/projekt.dir/tests_Tree.cpp.o" \
+"CMakeFiles/projekt.dir/tests_BST.cpp.o" \
 "CMakeFiles/projekt.dir/GoogleTest/gtest-death-test.cc.o" \
 "CMakeFiles/projekt.dir/GoogleTest/gtest-filepath.cc.o" \
 "CMakeFiles/projekt.dir/GoogleTest/gtest-port.cc.o" \
@@ -242,8 +270,10 @@ projekt_EXTERNAL_OBJECTS =
 
 projekt.exe: CMakeFiles/projekt.dir/Node.cpp.o
 projekt.exe: CMakeFiles/projekt.dir/Tree.cpp.o
+projekt.exe: CMakeFiles/projekt.dir/BST.cpp.o
 projekt.exe: CMakeFiles/projekt.dir/tests_Node.cpp.o
 projekt.exe: CMakeFiles/projekt.dir/tests_Tree.cpp.o
+projekt.exe: CMakeFiles/projekt.dir/tests_BST.cpp.o
 projekt.exe: CMakeFiles/projekt.dir/GoogleTest/gtest-death-test.cc.o
 projekt.exe: CMakeFiles/projekt.dir/GoogleTest/gtest-filepath.cc.o
 projekt.exe: CMakeFiles/projekt.dir/GoogleTest/gtest-port.cc.o
@@ -254,7 +284,7 @@ projekt.exe: CMakeFiles/projekt.dir/GoogleTest/gtest.cc.o
 projekt.exe: CMakeFiles/projekt.dir/GoogleTest/gtest_main.cc.o
 projekt.exe: CMakeFiles/projekt.dir/build.make
 projekt.exe: CMakeFiles/projekt.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable projekt.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable projekt.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/projekt.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

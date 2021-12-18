@@ -6,9 +6,11 @@ set(CMAKE_CXX_STANDARD 23)
 set(SOURCE_FILES
         Node.cpp
         Tree.cpp
+        BST.cpp
 
         tests_Node.cpp
         tests_Tree.cpp
+        tests_BST.cpp
 
         GoogleTest/gtest-death-test.cc
         GoogleTest/gtest-filepath.cc
