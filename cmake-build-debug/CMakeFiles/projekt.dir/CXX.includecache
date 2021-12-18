@@ -254,6 +254,12 @@ acxx_demangle.h
 iostream
 -
 
+/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/Tree.h
+iostream
+-
+Node.h
+/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/Node.h
+
 /cygdrive/c/Users/rudol/Desktop/programovanie/projekt/gtest/gtest.h
 limits
 -
@@ -282,11 +288,11 @@ gtest/gtest-typed-test.h
 gtest/gtest_pred_impl.h
 /cygdrive/c/Users/rudol/Desktop/programovanie/projekt/gtest/gtest/gtest_pred_impl.h
 
-/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/tests_Node.cpp
+/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/tests_Tree.cpp
 iostream
 -
 gtest/gtest.h
 /cygdrive/c/Users/rudol/Desktop/programovanie/projekt/gtest/gtest.h
-Node.h
-/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/Node.h
+Tree.h
+/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/Tree.h
 

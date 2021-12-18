@@ -180,6 +180,10 @@ CMakeFiles/projekt.dir/GoogleTest/gtest_main.cc.o
 CMakeFiles/projekt.dir/Node.cpp.o
  /cygdrive/c/Users/rudol/Desktop/programovanie/projekt/Node.cpp
  /cygdrive/c/Users/rudol/Desktop/programovanie/projekt/Node.h
+CMakeFiles/projekt.dir/Tree.cpp.o
+ /cygdrive/c/Users/rudol/Desktop/programovanie/projekt/Node.h
+ /cygdrive/c/Users/rudol/Desktop/programovanie/projekt/Tree.cpp
+ /cygdrive/c/Users/rudol/Desktop/programovanie/projekt/Tree.h
 CMakeFiles/projekt.dir/tests_Node.cpp.o
  ../GoogleTest/gtest/gtest-death-test.h
  ../GoogleTest/gtest/gtest-message.h
@@ -205,3 +209,29 @@ CMakeFiles/projekt.dir/tests_Node.cpp.o
  /cygdrive/c/Users/rudol/Desktop/programovanie/projekt/Node.h
  /cygdrive/c/Users/rudol/Desktop/programovanie/projekt/gtest/gtest.h
  /cygdrive/c/Users/rudol/Desktop/programovanie/projekt/tests_Node.cpp
+CMakeFiles/projekt.dir/tests_Tree.cpp.o
+ ../GoogleTest/gtest/gtest-death-test.h
+ ../GoogleTest/gtest/gtest-message.h
+ ../GoogleTest/gtest/gtest-param-test.h
+ ../GoogleTest/gtest/gtest-printers.h
+ ../GoogleTest/gtest/gtest-test-part.h
+ ../GoogleTest/gtest/gtest-typed-test.h
+ ../GoogleTest/gtest/gtest_pred_impl.h
+ ../GoogleTest/gtest/gtest_prod.h
+ ../GoogleTest/gtest/internal/custom/gtest-port.h
+ ../GoogleTest/gtest/internal/custom/gtest-printers.h
+ ../GoogleTest/gtest/internal/gtest-death-test-internal.h
+ ../GoogleTest/gtest/internal/gtest-filepath.h
+ ../GoogleTest/gtest/internal/gtest-internal.h
+ ../GoogleTest/gtest/internal/gtest-linked_ptr.h
+ ../GoogleTest/gtest/internal/gtest-param-util-generated.h
+ ../GoogleTest/gtest/internal/gtest-param-util.h
+ ../GoogleTest/gtest/internal/gtest-port-arch.h
+ ../GoogleTest/gtest/internal/gtest-port.h
+ ../GoogleTest/gtest/internal/gtest-string.h
+ ../GoogleTest/gtest/internal/gtest-tuple.h
+ ../GoogleTest/gtest/internal/gtest-type-util.h
+ /cygdrive/c/Users/rudol/Desktop/programovanie/projekt/Node.h
+ /cygdrive/c/Users/rudol/Desktop/programovanie/projekt/Tree.h
+ /cygdrive/c/Users/rudol/Desktop/programovanie/projekt/gtest/gtest.h
+ /cygdrive/c/Users/rudol/Desktop/programovanie/projekt/tests_Tree.cpp

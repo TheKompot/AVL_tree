@@ -17,7 +17,7 @@ set(SOURCE_FILES
         GoogleTest/gtest-test-part.cc
         GoogleTest/gtest-typed-test.cc
         GoogleTest/gtest.cc
-        GoogleTest/gtest_main.cc )
+        GoogleTest/gtest_main.cc)
 
 include_directories(GoogleTest)
 add_executable(projekt ${SOURCE_FILES})

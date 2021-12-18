@@ -180,6 +180,10 @@ CMakeFiles/projekt.dir/GoogleTest/gtest_main.cc.o: \
 CMakeFiles/projekt.dir/Node.cpp.o: \
  ../Node.cpp \
  ../Node.h
+CMakeFiles/projekt.dir/Tree.cpp.o: \
+ ../Node.h \
+ ../Tree.cpp \
+ ../Tree.h
 CMakeFiles/projekt.dir/tests_Node.cpp.o: \
  ../GoogleTest/gtest/gtest-death-test.h \
  ../GoogleTest/gtest/gtest-message.h \
@@ -205,3 +209,29 @@ CMakeFiles/projekt.dir/tests_Node.cpp.o: \
  ../Node.h \
  ../gtest/gtest.h \
  ../tests_Node.cpp
+CMakeFiles/projekt.dir/tests_Tree.cpp.o: \
+ ../GoogleTest/gtest/gtest-death-test.h \
+ ../GoogleTest/gtest/gtest-message.h \
+ ../GoogleTest/gtest/gtest-param-test.h \
+ ../GoogleTest/gtest/gtest-printers.h \
+ ../GoogleTest/gtest/gtest-test-part.h \
+ ../GoogleTest/gtest/gtest-typed-test.h \
+ ../GoogleTest/gtest/gtest_pred_impl.h \
+ ../GoogleTest/gtest/gtest_prod.h \
+ ../GoogleTest/gtest/internal/custom/gtest-port.h \
+ ../GoogleTest/gtest/internal/custom/gtest-printers.h \
+ ../GoogleTest/gtest/internal/gtest-death-test-internal.h \
+ ../GoogleTest/gtest/internal/gtest-filepath.h \
+ ../GoogleTest/gtest/internal/gtest-internal.h \
+ ../GoogleTest/gtest/internal/gtest-linked_ptr.h \
+ ../GoogleTest/gtest/internal/gtest-param-util-generated.h \
+ ../GoogleTest/gtest/internal/gtest-param-util.h \
+ ../GoogleTest/gtest/internal/gtest-port-arch.h \
+ ../GoogleTest/gtest/internal/gtest-port.h \
+ ../GoogleTest/gtest/internal/gtest-string.h \
+ ../GoogleTest/gtest/internal/gtest-tuple.h \
+ ../GoogleTest/gtest/internal/gtest-type-util.h \
+ ../Node.h \
+ ../Tree.h \
+ ../gtest/gtest.h \
+ ../tests_Tree.cpp
