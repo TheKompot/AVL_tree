@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="projekt"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="projekt">
+				<Option output="/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/projekt.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/GoogleTest"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/10/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/10/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/10/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/10/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/10/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 projekt"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="projekt/fast">
+				<Option output="/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/projekt.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/GoogleTest"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/10/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/10/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/10/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/10/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/10/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 projekt/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/AVL.h">
+			<Option target="projekt"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/BST.h">
+			<Option target="projekt"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/GoogleTest/gtest-death-test.cc">
+			<Option target="projekt"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/GoogleTest/gtest-filepath.cc">
+			<Option target="projekt"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/GoogleTest/gtest-port.cc">
+			<Option target="projekt"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/GoogleTest/gtest-printers.cc">
+			<Option target="projekt"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/GoogleTest/gtest-test-part.cc">
+			<Option target="projekt"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/GoogleTest/gtest-typed-test.cc">
+			<Option target="projekt"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/GoogleTest/gtest.cc">
+			<Option target="projekt"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/GoogleTest/gtest_main.cc">
+			<Option target="projekt"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/Node.cpp">
+			<Option target="projekt"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/Node.h">
+			<Option target="projekt"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/Tree.h">
+			<Option target="projekt"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/tests_Node.cpp">
+			<Option target="projekt"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
