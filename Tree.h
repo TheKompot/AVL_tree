@@ -6,6 +6,7 @@ class Tree{
     Node *root;
     int size;
     int calculate_size(Node *n);
+    int* inorder(Node *n);
     public:
         Tree():size(0),root(nullptr){}
         Tree(Node *root);

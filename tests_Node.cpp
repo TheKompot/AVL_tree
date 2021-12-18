@@ -11,6 +11,7 @@ TEST(Node_test, ConstructorWithoutParams) {
     ASSERT_EQ(0, n->get_height());
     ASSERT_EQ(nullptr, n->get_left());
     ASSERT_EQ(nullptr, n->get_right());
+    delete n;
 }
 
 TEST(Node_test, ConstructorWithHeightButNoChildren) {
@@ -19,6 +20,7 @@ TEST(Node_test, ConstructorWithHeightButNoChildren) {
     ASSERT_EQ(10, n->get_height());
     ASSERT_EQ(nullptr, n->get_left());
     ASSERT_EQ(nullptr, n->get_right());
+    delete n;
 }
 
 TEST(Node_test, Constructor) {
@@ -29,6 +31,9 @@ TEST(Node_test, Constructor) {
     ASSERT_EQ(0, n->get_height());
     ASSERT_EQ(child2, n->get_left());
     ASSERT_EQ(child1, n->get_right());
+    delete n;
+    delete child1;
+    delete child2;
 }
 
 TEST(Node_test, ConstructorWithHeight) {
@@ -39,6 +44,9 @@ TEST(Node_test, ConstructorWithHeight) {
     ASSERT_EQ(10, n->get_height());
     ASSERT_EQ(child2, n->get_left());
     ASSERT_EQ(child1, n->get_right());
+    delete n;
+    delete child1;
+    delete child2;
 }
 
 TEST(Node_test, TestingSetters) {
@@ -54,6 +62,8 @@ TEST(Node_test, TestingSetters) {
 
     n->set_right(child);
     ASSERT_EQ(child, n->get_right());
+    delete n;
+    delete child;
 }
 
 TEST(Node_test, settingLeftExpection) {
@@ -67,6 +77,7 @@ TEST(Node_test, settingLeftExpection) {
     }
     ASSERT_EQ("Cannot be child with itself", exception);
     ASSERT_EQ(nullptr, n->get_left());
+    delete n;
 }
 
 TEST(Node_test, settingRightExpection) {
@@ -80,6 +91,7 @@ TEST(Node_test, settingRightExpection) {
     }
     ASSERT_EQ("Cannot be child with itself", exception);
     ASSERT_EQ(nullptr, n->get_right());
+    delete n;
 }
 
 TEST(Node_test, settingHeightExpection) {
@@ -93,4 +105,5 @@ TEST(Node_test, settingHeightExpection) {
     }
     ASSERT_EQ("height cannot be negative", exception);
     ASSERT_EQ(0, n->get_height());
+    delete n;
 }
