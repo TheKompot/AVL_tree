@@ -345,6 +345,30 @@ Node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/projekt.dir/build.make CMakeFiles/projekt.dir/Node.cpp.s
 .PHONY : Node.cpp.s
 
+Tree.o: Tree.cpp.o
+.PHONY : Tree.o
+
+# target to build an object file
+Tree.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/projekt.dir/build.make CMakeFiles/projekt.dir/Tree.cpp.o
+.PHONY : Tree.cpp.o
+
+Tree.i: Tree.cpp.i
+.PHONY : Tree.i
+
+# target to preprocess a source file
+Tree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/projekt.dir/build.make CMakeFiles/projekt.dir/Tree.cpp.i
+.PHONY : Tree.cpp.i
+
+Tree.s: Tree.cpp.s
+.PHONY : Tree.s
+
+# target to generate assembly for a file
+Tree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/projekt.dir/build.make CMakeFiles/projekt.dir/Tree.cpp.s
+.PHONY : Tree.cpp.s
+
 tests_Node.o: tests_Node.cpp.o
 .PHONY : tests_Node.o
 
@@ -368,6 +392,30 @@ tests_Node.s: tests_Node.cpp.s
 tests_Node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/projekt.dir/build.make CMakeFiles/projekt.dir/tests_Node.cpp.s
 .PHONY : tests_Node.cpp.s
+
+tests_Tree.o: tests_Tree.cpp.o
+.PHONY : tests_Tree.o
+
+# target to build an object file
+tests_Tree.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/projekt.dir/build.make CMakeFiles/projekt.dir/tests_Tree.cpp.o
+.PHONY : tests_Tree.cpp.o
+
+tests_Tree.i: tests_Tree.cpp.i
+.PHONY : tests_Tree.i
+
+# target to preprocess a source file
+tests_Tree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/projekt.dir/build.make CMakeFiles/projekt.dir/tests_Tree.cpp.i
+.PHONY : tests_Tree.cpp.i
+
+tests_Tree.s: tests_Tree.cpp.s
+.PHONY : tests_Tree.s
+
+# target to generate assembly for a file
+tests_Tree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/projekt.dir/build.make CMakeFiles/projekt.dir/tests_Tree.cpp.s
+.PHONY : tests_Tree.cpp.s
 
 # Help Target
 help:
@@ -405,9 +453,15 @@ help:
 	@echo "... Node.o"
 	@echo "... Node.i"
 	@echo "... Node.s"
+	@echo "... Tree.o"
+	@echo "... Tree.i"
+	@echo "... Tree.s"
 	@echo "... tests_Node.o"
 	@echo "... tests_Node.i"
 	@echo "... tests_Node.s"
+	@echo "... tests_Tree.o"
+	@echo "... tests_Tree.i"
+	@echo "... tests_Tree.s"
 .PHONY : help
 
 

@@ -112,7 +112,16 @@
 		<Unit filename="/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/Node.h">
 			<Option target="projekt"/>
 		</Unit>
+		<Unit filename="/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/Tree.cpp">
+			<Option target="projekt"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/Tree.h">
+			<Option target="projekt"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/tests_Node.cpp">
+			<Option target="projekt"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/tests_Tree.cpp">
 			<Option target="projekt"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/CMakeLists.txt">
