@@ -15,7 +15,7 @@ set(SOURCE_FILES
         GoogleTest/gtest-test-part.cc
         GoogleTest/gtest-typed-test.cc
         GoogleTest/gtest.cc
-        GoogleTest/gtest_main.cc Tree.h Node.h BST.h AVL.h Node.cpp tests_Node.cpp)
+        GoogleTest/gtest_main.cc)
 
 include_directories(GoogleTest)
 add_executable(projekt ${SOURCE_FILES})
