@@ -1,6 +1,6 @@
-#include "BST.h"
+#include "AVL.h"
 
-bool BST::find(int val, Node *n){
+bool AVL::find(int val, Node *n){
     if(n->get_val()==val){
         return true;
     }
@@ -15,12 +15,14 @@ bool BST::find(int val, Node *n){
     }
     return false;
 }
-void BST::insert(int val){
+void AVL::insert(int val){
 
 }
-bool BST::find(int val){
+bool AVL::find(int val){
     return find(val,root);
 }
-bool BST::del(int val){
+bool AVL::del(int val){
     return false;
 }
+
+

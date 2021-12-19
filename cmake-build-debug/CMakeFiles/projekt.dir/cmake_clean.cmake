@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/projekt.dir/BST.cpp.o"
+  "CMakeFiles/projekt.dir/AVL.cpp.o"
   "CMakeFiles/projekt.dir/GoogleTest/gtest-death-test.cc.o"
   "CMakeFiles/projekt.dir/GoogleTest/gtest-filepath.cc.o"
   "CMakeFiles/projekt.dir/GoogleTest/gtest-port.cc.o"
@@ -10,7 +10,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/projekt.dir/GoogleTest/gtest_main.cc.o"
   "CMakeFiles/projekt.dir/Node.cpp.o"
   "CMakeFiles/projekt.dir/Tree.cpp.o"
-  "CMakeFiles/projekt.dir/tests_BST.cpp.o"
+  "CMakeFiles/projekt.dir/tests_AVL.cpp.o"
   "CMakeFiles/projekt.dir/tests_Node.cpp.o"
   "CMakeFiles/projekt.dir/tests_Tree.cpp.o"
   "libprojekt.dll.a"

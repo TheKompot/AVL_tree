@@ -129,29 +129,29 @@ projekt/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/projekt.dir/build.make CMakeFiles/projekt.dir/build
 .PHONY : projekt/fast
 
-BST.o: BST.cpp.o
-.PHONY : BST.o
+AVL.o: AVL.cpp.o
+.PHONY : AVL.o
 
 # target to build an object file
-BST.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/projekt.dir/build.make CMakeFiles/projekt.dir/BST.cpp.o
-.PHONY : BST.cpp.o
+AVL.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/projekt.dir/build.make CMakeFiles/projekt.dir/AVL.cpp.o
+.PHONY : AVL.cpp.o
 
-BST.i: BST.cpp.i
-.PHONY : BST.i
+AVL.i: AVL.cpp.i
+.PHONY : AVL.i
 
 # target to preprocess a source file
-BST.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/projekt.dir/build.make CMakeFiles/projekt.dir/BST.cpp.i
-.PHONY : BST.cpp.i
+AVL.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/projekt.dir/build.make CMakeFiles/projekt.dir/AVL.cpp.i
+.PHONY : AVL.cpp.i
 
-BST.s: BST.cpp.s
-.PHONY : BST.s
+AVL.s: AVL.cpp.s
+.PHONY : AVL.s
 
 # target to generate assembly for a file
-BST.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/projekt.dir/build.make CMakeFiles/projekt.dir/BST.cpp.s
-.PHONY : BST.cpp.s
+AVL.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/projekt.dir/build.make CMakeFiles/projekt.dir/AVL.cpp.s
+.PHONY : AVL.cpp.s
 
 GoogleTest/gtest-death-test.o: GoogleTest/gtest-death-test.cc.o
 .PHONY : GoogleTest/gtest-death-test.o
@@ -393,29 +393,29 @@ Tree.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/projekt.dir/build.make CMakeFiles/projekt.dir/Tree.cpp.s
 .PHONY : Tree.cpp.s
 
-tests_BST.o: tests_BST.cpp.o
-.PHONY : tests_BST.o
+tests_AVL.o: tests_AVL.cpp.o
+.PHONY : tests_AVL.o
 
 # target to build an object file
-tests_BST.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/projekt.dir/build.make CMakeFiles/projekt.dir/tests_BST.cpp.o
-.PHONY : tests_BST.cpp.o
+tests_AVL.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/projekt.dir/build.make CMakeFiles/projekt.dir/tests_AVL.cpp.o
+.PHONY : tests_AVL.cpp.o
 
-tests_BST.i: tests_BST.cpp.i
-.PHONY : tests_BST.i
+tests_AVL.i: tests_AVL.cpp.i
+.PHONY : tests_AVL.i
 
 # target to preprocess a source file
-tests_BST.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/projekt.dir/build.make CMakeFiles/projekt.dir/tests_BST.cpp.i
-.PHONY : tests_BST.cpp.i
+tests_AVL.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/projekt.dir/build.make CMakeFiles/projekt.dir/tests_AVL.cpp.i
+.PHONY : tests_AVL.cpp.i
 
-tests_BST.s: tests_BST.cpp.s
-.PHONY : tests_BST.s
+tests_AVL.s: tests_AVL.cpp.s
+.PHONY : tests_AVL.s
 
 # target to generate assembly for a file
-tests_BST.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/projekt.dir/build.make CMakeFiles/projekt.dir/tests_BST.cpp.s
-.PHONY : tests_BST.cpp.s
+tests_AVL.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/projekt.dir/build.make CMakeFiles/projekt.dir/tests_AVL.cpp.s
+.PHONY : tests_AVL.cpp.s
 
 tests_Node.o: tests_Node.cpp.o
 .PHONY : tests_Node.o
@@ -474,9 +474,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... projekt"
-	@echo "... BST.o"
-	@echo "... BST.i"
-	@echo "... BST.s"
+	@echo "... AVL.o"
+	@echo "... AVL.i"
+	@echo "... AVL.s"
 	@echo "... GoogleTest/gtest-death-test.o"
 	@echo "... GoogleTest/gtest-death-test.i"
 	@echo "... GoogleTest/gtest-death-test.s"
@@ -507,9 +507,9 @@ help:
 	@echo "... Tree.o"
 	@echo "... Tree.i"
 	@echo "... Tree.s"
-	@echo "... tests_BST.o"
-	@echo "... tests_BST.i"
-	@echo "... tests_BST.s"
+	@echo "... tests_AVL.o"
+	@echo "... tests_AVL.i"
+	@echo "... tests_AVL.s"
 	@echo "... tests_Node.o"
 	@echo "... tests_Node.i"
 	@echo "... tests_Node.s"

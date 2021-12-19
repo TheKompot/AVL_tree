@@ -1,12 +1,12 @@
 #include <iostream>
 #include "gtest/gtest.h"
 
-#include "BST.h"
+#include "AVL.h"
 
 using namespace ::testing;
 
 TEST(BST_test,constructor){
-    BST *tree = new BST();
+    AVL *tree = new AVL();
     ASSERT_EQ(tree->get_size(),0);
     ASSERT_EQ(nullptr,tree->get_all());
     delete tree;
@@ -28,7 +28,7 @@ TEST(BST_test,successfullFind){
         /
        C
      */
-    BST *t = new BST(root);
+    AVL *t = new AVL(root);
     ASSERT_TRUE(t->find(8));
     delete a;
     delete b;

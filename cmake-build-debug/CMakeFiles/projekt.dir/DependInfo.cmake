@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/BST.cpp" "/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/CMakeFiles/projekt.dir/BST.cpp.o"
+  "/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/AVL.cpp" "/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/CMakeFiles/projekt.dir/AVL.cpp.o"
   "/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/GoogleTest/gtest-death-test.cc" "/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/CMakeFiles/projekt.dir/GoogleTest/gtest-death-test.cc.o"
   "/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/GoogleTest/gtest-filepath.cc" "/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/CMakeFiles/projekt.dir/GoogleTest/gtest-filepath.cc.o"
   "/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/GoogleTest/gtest-port.cc" "/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/CMakeFiles/projekt.dir/GoogleTest/gtest-port.cc.o"
@@ -19,7 +19,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/GoogleTest/gtest_main.cc" "/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/CMakeFiles/projekt.dir/GoogleTest/gtest_main.cc.o"
   "/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/Node.cpp" "/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/CMakeFiles/projekt.dir/Node.cpp.o"
   "/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/Tree.cpp" "/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/CMakeFiles/projekt.dir/Tree.cpp.o"
-  "/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/tests_BST.cpp" "/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/CMakeFiles/projekt.dir/tests_BST.cpp.o"
+  "/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/tests_AVL.cpp" "/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/CMakeFiles/projekt.dir/tests_AVL.cpp.o"
   "/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/tests_Node.cpp" "/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/CMakeFiles/projekt.dir/tests_Node.cpp.o"
   "/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/tests_Tree.cpp" "/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/cmake-build-debug/CMakeFiles/projekt.dir/tests_Tree.cpp.o"
   )
