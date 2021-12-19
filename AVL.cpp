@@ -1,15 +1,22 @@
 #include "AVL.h"
 
 bool AVL::find(int val, Node *n){
+    // method for finding a value in tree using recursion
+
+    //if value found -> return true
     if(n->get_val()==val){
         return true;
     }
+    // if value smaller -> try to go left
     if(n->get_val() > val){
         if(n->get_left() != nullptr){
+            // find value in sub tree
             return find(val,n->get_left());
         }
+        //if cannot go left -> value is not in tree
         return false;
     }
+    // if value larger -> try to go right
     if(n->get_right() != nullptr){
         return find(val,n->get_right());
     }
