@@ -88,6 +88,9 @@
 		<Unit filename="/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/AVL.h">
 			<Option target="projekt"/>
 		</Unit>
+		<Unit filename="/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/AVL_test.h">
+			<Option target="projekt"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/GoogleTest/gtest-death-test.cc">
 			<Option target="projekt"/>
 		</Unit>

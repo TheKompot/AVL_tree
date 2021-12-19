@@ -5,13 +5,14 @@
 
 using namespace ::testing;
 
-TEST(BST_test,constructor){
+TEST(AVL_test,constructor){
     AVL *tree = new AVL();
     ASSERT_EQ(tree->get_size(),0);
     ASSERT_EQ(nullptr,tree->get_all());
     delete tree;
 }
-TEST(BST_test,successfullFind){
+
+TEST(AVL_test,successfullFind){
     Node *root = new Node(6);
     Node *a = new Node(5);
     Node *b = new Node(8);
@@ -35,4 +36,8 @@ TEST(BST_test,successfullFind){
     delete c;
     delete root;
     delete t;
+}
+
+TEST(AVL_test, emptyRotation){
+    AVL tree();
 }
