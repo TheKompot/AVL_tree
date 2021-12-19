@@ -1,9 +1,8 @@
 #include <iostream>
 #include  "Tree.h"
-#include "AVL_test.h"
 
 class AVL: public Tree{
-    friend AVL_test;
+protected:
     Node*  rotate_right(Node *n);
     Node* rotate_left(Node *x);
     bool is_balanced(Node *n);
@@ -14,4 +13,7 @@ public:
     void insert(int val);
     bool find(int val);
     bool del(int val);
+};
+class AVL_test: public AVL{
+    using AVL::AVL;
 };

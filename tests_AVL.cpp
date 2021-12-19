@@ -39,5 +39,5 @@ TEST(AVL_test,successfullFind){
 }
 
 TEST(AVL_test, emptyRotation){
-    AVL tree();
+
 }

@@ -5,12 +5,11 @@
 class Tree {
     int size;
 
-    int calculate_size(Node *n);
-
     int *inorder(Node *n);
 
 protected:
     Node *root;
+    int calculate_size(Node *n);
 public:
     Tree() : size(0), root(nullptr) {}
 
