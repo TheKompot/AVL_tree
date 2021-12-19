@@ -30,6 +30,8 @@ int AVL::max(int a, int b){
 }
 
 Node* AVL::rotate_left(Node *x){
+    if(x == nullptr)
+        return nullptr;
     Node *y = x->get_right();
     Node *T2 = y->get_left();
 

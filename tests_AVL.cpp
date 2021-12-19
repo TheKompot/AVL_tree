@@ -39,5 +39,6 @@ TEST(AVL_test,successfullFind){
 }
 
 TEST(AVL_test, emptyRotation){
-
+    AVL_test tester;
+    ASSERT_EQ(nullptr,tester.rotate_left(nullptr));
 }
