@@ -1,6 +1,6 @@
 #include "Tree.h"
 
-int Tree::calculate_size(Node *n){
+const int Tree::calculate_size(Node *n){
     // using recursion get size of tree
 
     int add = 1; // adding itself to size

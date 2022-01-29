@@ -5,7 +5,7 @@ class NodeError : public std::exception {
 public:
     NodeError(const char *v) { text = v; };
 
-    std::string message() const { return text; };
+    const std::string message() const { return text; };
 };
 
 class Node {
@@ -14,7 +14,7 @@ class Node {
     Node *left;
     int height = 0;
 
-    void can_be_child(Node *n);
+    const void can_be_child(Node *n);
 
 public:
     Node(int val, Node *right = nullptr, Node *left = nullptr);

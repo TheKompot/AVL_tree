@@ -9,7 +9,7 @@ class Tree {
 
 protected:
     Node *root;
-    int calculate_size(Node *n);
+    const int calculate_size(Node *n);
 public:
     Tree() : size(0), root(nullptr) {}
 
@@ -17,7 +17,7 @@ public:
 
     virtual void insert(int val) {}
 
-    virtual bool find(int val) { return false; }
+    const virtual bool find(int val) { return false; }
 
     virtual bool del(int val) { return false; }
 

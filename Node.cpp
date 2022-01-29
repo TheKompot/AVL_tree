@@ -11,7 +11,7 @@ Node::Node(int val, int height, Node *right, Node *left) :
         right(right),
         left(left) {}
 
-void Node::can_be_child(Node *n) {
+const void Node::can_be_child(Node *n) {
     if (n == this) {
         throw NodeError("Cannot be child with itself");
     }

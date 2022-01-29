@@ -12,7 +12,6 @@ set(SOURCE_FILES
         tests_Tree.cpp
         tests_AVL.cpp
 
-        AVL_test.h
 
         GoogleTest/gtest-death-test.cc
         GoogleTest/gtest-filepath.cc

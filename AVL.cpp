@@ -1,6 +1,6 @@
 #include "AVL.h"
 
-bool AVL::find(int val, Node *n){
+const bool AVL::find(int val, Node *n){
     // method for finding a value in tree using recursion
 
     //if value found -> return true
@@ -25,7 +25,7 @@ bool AVL::find(int val, Node *n){
 void AVL::insert(int val){
 
 }
-bool AVL::find(int val){
+const bool AVL::find(int val){
     return find(val,root);
 }
 bool AVL::del(int val){
