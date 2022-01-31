@@ -250,27 +250,15 @@ cxxabi.h
 acxx_demangle.h
 -
 
-/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/AVL.cpp
-AVL.h
-/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/AVL.h
-
 /cygdrive/c/Users/rudol/Desktop/programovanie/projekt/AVL.h
 iostream
 -
 Tree.h
 /cygdrive/c/Users/rudol/Desktop/programovanie/projekt/Tree.h
 
-/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/Node.cpp
-Node.h
-/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/Node.h
-
 /cygdrive/c/Users/rudol/Desktop/programovanie/projekt/Node.h
 iostream
 -
-
-/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/Tree.cpp
-Tree.h
-/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/Tree.h
 
 /cygdrive/c/Users/rudol/Desktop/programovanie/projekt/Tree.h
 iostream
@@ -313,20 +301,4 @@ gtest/gtest.h
 /cygdrive/c/Users/rudol/Desktop/programovanie/projekt/gtest/gtest.h
 AVL.h
 /cygdrive/c/Users/rudol/Desktop/programovanie/projekt/AVL.h
-
-/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/tests_Node.cpp
-iostream
--
-gtest/gtest.h
-/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/gtest/gtest.h
-Node.h
-/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/Node.h
-
-/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/tests_Tree.cpp
-iostream
--
-gtest/gtest.h
-/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/gtest/gtest.h
-Tree.h
-/cygdrive/c/Users/rudol/Desktop/programovanie/projekt/Tree.h
 

@@ -96,3 +96,54 @@ TEST(AVL_test, normalLeftRotation){
 
 
 }
+
+TEST(AVL_test, normalRightRotation){
+    Node root(5);
+    Node t1(4);
+    Node A(7);
+    Node t2(6);
+    Node t3(8);
+
+    root.set_left(&A);
+    root.set_right(&t3);
+    root.set_height(6);
+
+    A.set_left(&t1);
+    A.set_right(&t2);
+    A.set_height(5);
+
+    t1.set_height(4);
+    t2.set_height(3);
+    t3.set_height(3);
+
+/*
+ creating tree
+    root
+    /  \
+   A   T3
+  / \
+ t1  t2
+ */
+/*
+ expected tree
+      A
+     / \
+    t1 root
+       / \
+      t2  t3
+ */
+    AVL_test tester(&root);
+    Node *new_root = tester.rotate_right(&root);
+    ASSERT_EQ(&A,new_root);
+    ASSERT_EQ(&root,new_root->get_right());
+    ASSERT_EQ(&t1,new_root->get_left());
+    ASSERT_EQ(&t2,new_root->get_right()->get_left());
+    ASSERT_EQ(&t3,new_root->get_right()->get_right());
+
+    //Testing heights
+    ASSERT_EQ(5,new_root->get_height());
+    ASSERT_EQ(4,new_root->get_right()->get_height());
+    ASSERT_EQ(4,new_root->get_left()->get_height());
+    ASSERT_EQ(3,new_root->get_right()->get_left()->get_height());
+    ASSERT_EQ(3,new_root->get_right()->get_right()->get_height());
+}

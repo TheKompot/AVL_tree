@@ -55,3 +55,24 @@ Node* AVL::rotate_left(Node *x){
     // Return new root
     return y;
 }
+
+Node* AVL::rotate_right(Node *x) {
+    if(x == nullptr)
+        return nullptr;
+
+    Node *y = x->get_left();
+    Node *T2 = y->get_right();
+
+    // Perform rotation
+    y->set_right(x);
+    x->set_left(T2);
+
+    // Update heights
+    x->set_height(max(x->get_left()->get_height(),
+                      x->get_right()->get_height()) + 1);
+    y->set_height(max(y->get_left()->get_height(),
+                      y->get_right()->get_height()) + 1);
+
+    // Return new root
+    return y;
+}

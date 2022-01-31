@@ -3,7 +3,7 @@
 
 class AVL: public Tree{
 protected:
-    Node*  rotate_right(Node *x);
+    Node* rotate_right(Node *x);
     Node* rotate_left(Node *x);
     bool is_balanced(Node *n);
     const bool find(int val, Node *n);
@@ -17,6 +17,6 @@ public:
 class AVL_test: public AVL{
     using AVL::AVL;
 public:
-    Node*  rotate_right(Node *x) {return AVL::rotate_left(x);}
+    Node*  rotate_right(Node *x) {return AVL::rotate_right(x);}
     Node* rotate_left(Node *x) {return AVL::rotate_left(x);}
 };
