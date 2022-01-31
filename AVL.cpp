@@ -76,3 +76,9 @@ Node* AVL::rotate_right(Node *x) {
     // Return new root
     return y;
 }
+
+int AVL::get_balance(Node *n){
+    if(n == nullptr)
+        return 0;
+    return n->get_left()->get_height() - n->get_right()->get_height();
+}

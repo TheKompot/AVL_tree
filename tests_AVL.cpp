@@ -147,3 +147,29 @@ TEST(AVL_test, normalRightRotation){
     ASSERT_EQ(3,new_root->get_right()->get_left()->get_height());
     ASSERT_EQ(3,new_root->get_right()->get_right()->get_height());
 }
+
+TEST(AVL_test, testBalance){
+    Node root(5);
+    Node A(7);
+    Node t3(8);
+
+    root.set_left(&A);
+    root.set_right(&t3);
+    root.set_height(5);
+
+    A.set_height(4);
+
+    t3.set_height(4);
+    /*
+ creating tree
+    root
+    /  \
+   A   t3
+ */
+    AVL_test tester(&root);
+    ASSERT_EQ(0,tester.get_balance(&root));
+    ASSERT_EQ(0,tester.get_balance(nullptr));
+
+    A.set_height(3);
+    ASSERT_EQ(-1,tester.get_balance(&root));
+}
