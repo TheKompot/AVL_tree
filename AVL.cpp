@@ -22,7 +22,82 @@ const bool AVL::find(int val, Node *n){
     }
     return false;
 }
+Node* AVL::insert(Node* node, int val){
+
+    /* 1. Perform the normal BST insertion */
+
+    if (val < node->get_val()){
+        if(node->get_left() == nullptr){
+            node->set_left(new Node(val));
+            node->get_left()->set_height(1);
+        }
+        else{
+           node->set_left(insert(node->get_left(), val));
+        }
+    }
+    else if (val > node->get_val()){
+        if(node->get_right() == nullptr){
+            node->set_right(new Node(val));
+            node->get_right()->set_height(1);
+        }
+        else{
+            node->set_right(insert(node->get_right(), val));
+        }
+    }
+    else // Equal keys are not allowed in BST
+        return node;
+
+    /* 2. Update height of this ancestor node */
+    if(node->get_right() != nullptr && node->get_left() != nullptr){
+        node->set_height(1 + max(node->get_left()->get_height(),
+                                 node->get_right()->get_height()));
+    }
+    else if(node->get_right() != nullptr){
+        node->set_height(1 + node->get_right()->get_height());
+    }
+    else{
+        node->set_height(1 + node->get_left()->get_height());
+    }
+    /* 3. Get the balance factor of this ancestor
+        node to check whether this node became
+        unbalanced */
+    int balance = get_balance(node);
+
+    // If this node becomes unbalanced, then
+    // there are 4 cases
+
+    // Left Left Case
+    if ( balance > 1 && (node->get_left() == nullptr||val < node->get_left()->get_val()))
+        return rotate_right(node);
+
+    // Right Right Case
+    if (balance < -1 && (node->get_right() == nullptr||val > node->get_right()->get_val()))
+        return rotate_left(node);
+
+    // Left Right Case
+    if (balance > 1 && (node->get_left() == nullptr||val > node->get_left()->get_val())){
+        node->set_left(rotate_left(node->get_left()));
+        return rotate_right(node);
+    }
+
+    // Right Left Case
+    if (balance < -1 && (node->get_right() == nullptr||val < node->get_right()->get_val())){
+        node->set_right(rotate_right(node->get_right()));
+        return rotate_left(node);
+    }
+
+
+
+    return node;
+}
 void AVL::insert(int val){
+    if(root == nullptr){
+        root = new Node(val);
+        root->set_height(1);
+    }
+    else{
+        root = insert(root,val);
+    }
 
 }
 const bool AVL::find(int val){
@@ -46,11 +121,29 @@ Node* AVL::rotate_left(Node *x){
     y->set_left(x);
     x->set_right(T2);
 
+    int xleft_height = 0;
+    int xright_height = 0;
+    int yleft_height = 0;
+    int yright_height = 0;
+
     // Update heights
-    x->set_height(max(x->get_left()->get_height(),
-                      x->get_right()->get_height()) + 1);
-    y->set_height(max(y->get_left()->get_height(),
-                      y->get_right()->get_height()) + 1);
+    if(x->get_left() != nullptr){
+        xleft_height = x->get_left()->get_height();
+    }
+    if(x->get_right()!= nullptr){
+        xright_height = x->get_right()->get_height();
+    }
+    x->set_height(max(xleft_height,
+                      xright_height) + 1);
+    if(y->get_left() != nullptr){
+        yleft_height = y->get_left()->get_height();
+    }
+    if(y->get_right()!= nullptr){
+        yright_height = y->get_right()->get_height();
+    }
+
+    y->set_height(max(yleft_height,
+                      yright_height) + 1);
 
     // Return new root
     return y;
@@ -66,12 +159,29 @@ Node* AVL::rotate_right(Node *x) {
     // Perform rotation
     y->set_right(x);
     x->set_left(T2);
+    int xleft_height = 0;
+    int xright_height = 0;
+    int yleft_height = 0;
+    int yright_height = 0;
 
     // Update heights
-    x->set_height(max(x->get_left()->get_height(),
-                      x->get_right()->get_height()) + 1);
-    y->set_height(max(y->get_left()->get_height(),
-                      y->get_right()->get_height()) + 1);
+    if(x->get_left() != nullptr){
+        xleft_height = x->get_left()->get_height();
+    }
+    if(x->get_right()!= nullptr){
+        xright_height = x->get_right()->get_height();
+    }
+    x->set_height(max(xleft_height,
+                      xright_height) + 1);
+    if(y->get_left() != nullptr){
+        yleft_height = y->get_left()->get_height();
+    }
+    if(y->get_right()!= nullptr){
+        yright_height = y->get_right()->get_height();
+    }
+
+    y->set_height(max(yleft_height,
+                      yright_height) + 1);
 
     // Return new root
     return y;
@@ -80,5 +190,14 @@ Node* AVL::rotate_right(Node *x) {
 int AVL::get_balance(Node *n){
     if(n == nullptr)
         return 0;
-    return n->get_left()->get_height() - n->get_right()->get_height();
+    if(n->get_left() != nullptr && n->get_right() != nullptr){
+        return n->get_left()->get_height() - n->get_right()->get_height();
+    }
+    if(n->get_left() != nullptr){
+        return n->get_left()->get_height();
+    }
+    if(n->get_right() != nullptr){
+        return -n->get_right()->get_height();
+    }
+    return 0;
 }

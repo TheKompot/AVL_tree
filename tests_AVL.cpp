@@ -1,9 +1,11 @@
 #include <iostream>
 #include "gtest/gtest.h"
+#include <chrono>
 
 #include "AVL.h"
 
 using namespace ::testing;
+using namespace std::chrono;
 
 TEST(AVL_test,constructor){
     AVL *tree = new AVL();
@@ -172,4 +174,52 @@ TEST(AVL_test, testBalance){
 
     A.set_height(3);
     ASSERT_EQ(-1,tester.get_balance(&root));
+}
+TEST(AVL_test, balanceWithEmptyNode){
+    Node root(5);
+    AVL_test tester(&root);
+    ASSERT_EQ(0,tester.get_balance(&root));
+}
+TEST(AVL_test, balanceWithEmptyTree){
+    AVL_test tester;
+    ASSERT_EQ(0,tester.get_balance(tester.get_root()));
+}
+
+TEST(AVL_test,basicInsertTest){
+    AVL_test tree;
+    tree.insert(5);
+    ASSERT_EQ(5,tree.get_root()->get_val());
+    tree.insert(6);
+    ASSERT_EQ(6,tree.get_root()->get_right()->get_val());
+    tree.insert(4);
+    ASSERT_EQ(4,tree.get_root()->get_left()->get_val());
+    ASSERT_EQ(2,tree.get_root()->get_height());
+}
+
+TEST(AVL_test,InsertWithRightRotaton){
+    AVL_test tree;
+    tree.insert(6);
+    tree.insert(5);
+    tree.insert(4);
+    ASSERT_EQ(5,tree.get_root()->get_val());
+    ASSERT_EQ(6,tree.get_root()->get_right()->get_val());
+}
+
+TEST(AVL_test,InsertWithLefttRotaton){
+    AVL_test tree;
+    tree.insert(4);
+    tree.insert(5);
+    tree.insert(6);
+    ASSERT_EQ(5,tree.get_root()->get_val());
+    ASSERT_EQ(6,tree.get_root()->get_right()->get_val());
+}
+
+TEST(AVL_test,MoreComplicatedInsert){
+    AVL_test tree;
+    for(int i=0;i<1024;i++){
+        tree.insert(i);
+    }
+
+    ASSERT_TRUE(tree.get_root()->get_height() >=9 && tree.get_root()->get_height() <=11);
+
 }
