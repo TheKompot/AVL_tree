@@ -273,3 +273,41 @@ TEST(AVL_TEST,deleteWithRotation){
     }
     delete[] list;
 }
+
+TEST(AVL_TEST,testSizeEmpty){
+    AVL tree;
+    ASSERT_EQ(0,tree.get_size());
+}
+TEST(AVL_TEST,testSizeAfterAddingRoot){
+    AVL tree;
+    tree.insert(10);
+    ASSERT_EQ(1,tree.get_size());
+}
+
+TEST(AVL_TEST,testSizeAfterAdding){
+    AVL tree;
+    tree.insert(10);
+    tree.insert(9);
+    tree.insert(11);
+    ASSERT_EQ(3,tree.get_size());
+}
+TEST(AVL_TEST,sizeAfterdeleting){
+    AVL tree;
+    tree.insert(10);
+    tree.insert(9);
+    tree.insert(11);
+
+    tree.del(10);
+    ASSERT_EQ(2,tree.get_size());
+}
+TEST(AVL_TEST,sizeAfterDeletingAll){
+    AVL tree;
+    tree.insert(10);
+    tree.insert(9);
+    tree.insert(11);
+
+    tree.del(10);
+    tree.del(9);
+    tree.del(11);
+    ASSERT_EQ(0,tree.get_size());
+}

@@ -30,6 +30,7 @@ Node* AVL::insert(Node* node, int val){
         if(node->get_left() == nullptr){
             node->set_left(new Node(val));
             node->get_left()->set_height(1);
+            set_size(get_size()+1);
         }
         else{
            node->set_left(insert(node->get_left(), val));
@@ -39,6 +40,7 @@ Node* AVL::insert(Node* node, int val){
         if(node->get_right() == nullptr){
             node->set_right(new Node(val));
             node->get_right()->set_height(1);
+            set_size(get_size()+1);
         }
         else{
             node->set_right(insert(node->get_right(), val));
@@ -94,6 +96,7 @@ void AVL::insert(int val){
     if(root == nullptr){
         root = new Node(val);
         root->set_height(1);
+        set_size(get_size()+1);
     }
     else{
         root = insert(root,val);
@@ -107,25 +110,19 @@ void AVL::del(int val){
     root = deleteNode(root,val);
 
 }
-/* Given a non-empty binary search tree,
-return the node with minimum key value
-found in that tree. Note that the entire
-tree does not need to be searched. */
+
 Node * AVL::minValueNode(Node* node)
 {
     Node* current = node;
 
-    /* loop down to find the leftmost leaf */
+    // loop down to find the leftmost leaf
     while (current->get_left() != nullptr)
         current = current->get_left();
 
     return current;
 }
 
-// Recursive function to delete a node
-// with given key from subtree with
-// given root. It returns root of the
-// modified subtree.
+
 Node* AVL::deleteNode(Node* root, int key)
 {
 
@@ -149,6 +146,7 @@ Node* AVL::deleteNode(Node* root, int key)
         // This is the node to be deleted
     else
     {
+
         // node with only one child or no child
         if( (root->get_left() == nullptr) ||
             (root->get_right() == nullptr) )
@@ -167,6 +165,7 @@ Node* AVL::deleteNode(Node* root, int key)
                 *root = *temp; // Copy the contents of
             // the non-empty child
             delete temp;
+            set_size(get_size()-1);
         }
         else
         {

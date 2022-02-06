@@ -10,6 +10,7 @@ class Tree {
 protected:
     Node *root;
     const int calculate_size(Node *n);
+    void set_size(int s) { size = s;}
 public:
     Tree() : size(0), root(nullptr) {}
 
