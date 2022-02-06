@@ -54,8 +54,8 @@ TEST(Tree_test,getOnlyRoot){
     Node n(5);
     Tree t(&n);
     int* list = t.get_all();
-    ASSERT_EQ(5,list[0]);
-    delete []list;
+    ASSERT_EQ(5,*list);
+    delete list;
 }
 
 TEST(Tree_test,getWithFewNodes){

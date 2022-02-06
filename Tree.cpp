@@ -49,6 +49,9 @@ int* Tree::inorder(Node *n){
     delete[] left;
     delete[] right;
 
+    left = nullptr;
+    right = nullptr;
+
     return output;
 }
 
@@ -57,7 +60,7 @@ int* Tree::get_all(){
         return nullptr;
     int * arr = inorder(root);
     int *output = arr+1; // removing first element with size of array
-    delete arr;
+    //delete arr; preco nemozem vymazat ibaprvy element ?
+    arr = nullptr;
     return output;
 }
-
