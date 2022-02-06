@@ -13,6 +13,7 @@
 ### AVL
 * dedi  Tree
 * ma naprogramovane methody del, find a insert
+* pri vsetkych operaciach udrzuje strom vyrovnany (pomocou pravej a lavej rotacie)
 
 ### AVL_test
 * dedi AVL

@@ -18,6 +18,7 @@ public:
     void insert(int val);
     const bool find(int val);
     void del(int val);
+    int get_height() {return root->get_height();}
     ~AVL();
 };
 

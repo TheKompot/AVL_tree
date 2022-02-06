@@ -4,6 +4,7 @@ project(projekt)
 set(CMAKE_CXX_STANDARD 23)
 
 set(SOURCE_FILES
+
         Node.cpp
         Tree.cpp
         AVL.cpp
@@ -20,7 +21,9 @@ set(SOURCE_FILES
         GoogleTest/gtest-test-part.cc
         GoogleTest/gtest-typed-test.cc
         GoogleTest/gtest.cc
-        GoogleTest/gtest_main.cc )
+        GoogleTest/gtest_main.cc)
 
 include_directories(GoogleTest)
 add_executable(projekt ${SOURCE_FILES})
+
+
