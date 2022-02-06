@@ -23,6 +23,8 @@ public:
 
     const int get_val() { return value; }
 
+    void set_val(int val) {value = val;}
+
     void set_left(Node *n);
 
     void set_right(Node *n);

@@ -19,7 +19,7 @@ public:
 
     const virtual bool find(int val) { return false; }
 
-    virtual bool del(int val) { return false; }
+    virtual void del(int val) {}
 
     int *get_all();
 

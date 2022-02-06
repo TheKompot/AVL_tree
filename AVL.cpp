@@ -103,10 +103,143 @@ void AVL::insert(int val){
 const bool AVL::find(int val){
     return find(val,root);
 }
-bool AVL::del(int val){
-    return false;
+void AVL::del(int val){
+    root = deleteNode(root,val);
+
+}
+/* Given a non-empty binary search tree,
+return the node with minimum key value
+found in that tree. Note that the entire
+tree does not need to be searched. */
+Node * AVL::minValueNode(Node* node)
+{
+    Node* current = node;
+
+    /* loop down to find the leftmost leaf */
+    while (current->get_left() != nullptr)
+        current = current->get_left();
+
+    return current;
 }
 
+// Recursive function to delete a node
+// with given key from subtree with
+// given root. It returns root of the
+// modified subtree.
+Node* AVL::deleteNode(Node* root, int key)
+{
+
+    // STEP 1: PERFORM STANDARD BST DELETE
+    if (root == nullptr)
+        return root;
+
+    // If the key to be deleted is smaller
+    // than the root's key, then it lies
+    // in left subtree
+    if ( key < root->get_val() )
+        root->set_left(deleteNode(root->get_left(), key));
+
+        // If the key to be deleted is greater
+        // than the root's key, then it lies
+        // in right subtree
+    else if( key > root->get_val() )
+        root->set_right(deleteNode(root->get_right(), key));
+
+        // if key is same as root's key, then
+        // This is the node to be deleted
+    else
+    {
+        // node with only one child or no child
+        if( (root->get_left() == nullptr) ||
+            (root->get_right() == nullptr) )
+        {
+            Node *temp = root->get_left() ?
+                         root->get_left() :
+                         root->get_right();
+
+            // No child case
+            if (temp == nullptr)
+            {
+                temp = root;
+                root = nullptr;
+            }
+            else // One child case
+                *root = *temp; // Copy the contents of
+            // the non-empty child
+            delete temp;
+        }
+        else
+        {
+            // node with two children: Get the inorder
+            // successor (smallest in the right subtree)
+            Node* temp = minValueNode(root->get_right());
+
+            // Copy the inorder successor's
+            // data to this node
+            root->set_val(temp->get_val());
+
+            // Delete the inorder successor
+            root->set_right(deleteNode(root->get_right(),
+                                       temp->get_val())) ;
+        }
+    }
+
+    // If the tree had only one node
+    // then return
+    if (root == nullptr)
+        return root;
+
+    // STEP 2: UPDATE HEIGHT OF THE CURRENT NODE
+    if(root->get_right() != nullptr && root->get_left() != nullptr){
+        root->set_height(1 + max(root->get_left()->get_height(),
+                                 root->get_right()->get_height()));
+    }
+    else if(root->get_right() != nullptr){
+        root->set_height(1 + root->get_right()->get_height());
+    }
+    else if(root->get_left()!= nullptr){
+        root->set_height(1 + root->get_left()->get_height());
+    }
+    else{
+        root->set_height(1);
+    }
+
+    // STEP 3: GET THE BALANCE FACTOR OF
+    // THIS NODE (to check whether this
+    // node became unbalanced)
+    int balance = get_balance(root);
+
+    // If this node becomes unbalanced,
+    // then there are 4 cases
+
+    // Left Left Case
+    if (balance > 1 &&
+        get_balance(root->get_left()) >= 0)
+        return rotate_right(root);
+
+    // Left Right Case
+    if (balance > 1 &&
+        get_balance(root->get_left()) < 0)
+    {
+        root->set_left(rotate_left(root->get_left()));
+        return rotate_right(root);
+    }
+
+    // Right Right Case
+    if (balance < -1 &&
+        get_balance(root->get_right()) <= 0)
+        return rotate_left(root);
+
+    // Right Left Case
+    if (balance < -1 &&
+        get_balance(root->get_right()) > 0)
+    {
+        root->set_right(rotate_right(root->get_right()));
+        return rotate_left(root);
+    }
+
+    return root;
+}
 int AVL::max(int a, int b){
     return (a > b)? a : b;
 }

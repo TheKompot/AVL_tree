@@ -10,12 +10,14 @@ protected:
     static int get_balance(Node *n);
     const bool find(int val, Node *n);
     static int max(int a, int b);
+    static Node* minValueNode(Node* node);
     Node* insert(Node* node, int val);
+    Node* deleteNode(Node* root, int key);
 public:
     using Tree::Tree;
     void insert(int val);
     const bool find(int val);
-    bool del(int val);
+    void del(int val);
     ~AVL();
 };
 

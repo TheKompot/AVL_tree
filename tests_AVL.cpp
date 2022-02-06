@@ -216,6 +216,60 @@ TEST(AVL_test,MoreComplicatedInsert){
         tree.insert(i);
     }
 
-    ASSERT_TRUE(tree.get_root()->get_height() >=9 && tree.get_root()->get_height() <=11);
+    ASSERT_TRUE( tree.get_root()->get_height() <=11);
 
+}
+
+TEST(AVL_TEST,emptyDelete){
+    AVL_test tree;
+    tree.del(5);
+    ASSERT_EQ(nullptr,tree.get_root());
+}
+
+TEST(AVL_TEST,deleteTreeWithOneNode){
+    AVL_test tree;
+    tree.insert(5);
+    tree.del(5);
+    ASSERT_EQ(nullptr,tree.get_root());
+}
+
+TEST(AVL_TEST,deletingRoot){
+    AVL_test tree;
+    tree.insert(5);
+    tree.insert(6);
+    tree.del(5);
+    ASSERT_EQ(6,tree.get_root()->get_val());
+}
+
+TEST(AVL_TEST,deletingNodeWithChildren){
+    AVL_test tree;
+    tree.insert(2);
+    tree.insert(1);
+    tree.insert(4);
+    tree.insert(3);
+    tree.insert(5);
+
+    tree.del(4);
+    ASSERT_EQ(5,tree.get_root()->get_right()->get_val());
+}
+TEST(AVL_TEST,deleteWithRotation){
+    AVL_test tree;
+    tree.insert(9);
+    tree.insert(5);
+    tree.insert(10);
+    tree.insert(0);
+    tree.insert(6);
+    tree.insert(11);
+    tree.insert(-1);
+    tree.insert(1);
+    tree.insert(2);
+
+    tree.del(10);
+    int* list = tree.get_all();
+    int arr[]{-1,0,1,2,5,6,9,11};
+
+    for(int i =0;i<8;i++){
+        ASSERT_EQ(list[i],arr[i]);
+    }
+    delete[] list;
 }
