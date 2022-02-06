@@ -19,4 +19,3 @@
 * dedi AVL
 * existuje aby sa dali lahsie testovat metody ktore nechcem aby boli public (napr prava ci lava rotacia stromu)
 
-## Benchmark
