@@ -3,6 +3,7 @@
 
 class AVL: public Tree{
 
+    void recursiveDestructor(Node* n);
 protected:
     Node* rotate_right(Node *x);
     Node* rotate_left(Node *x);
@@ -15,6 +16,7 @@ public:
     void insert(int val);
     const bool find(int val);
     bool del(int val);
+    ~AVL();
 };
 
 class AVL_test: public AVL{

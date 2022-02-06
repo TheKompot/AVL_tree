@@ -33,10 +33,6 @@ TEST(AVL_test,successfullFind){
      */
     AVL *t = new AVL(root);
     ASSERT_TRUE(t->find(8));
-    delete a;
-    delete b;
-    delete c;
-    delete root;
     delete t;
 }
 
@@ -47,23 +43,23 @@ TEST(AVL_test, emptyLeftRotation){
 
 TEST(AVL_test, normalLeftRotation){
 
-    Node root(5);
-    Node t1(4);
-    Node A(7);
-    Node t2(6);
-    Node t3(8);
+    Node* root = new Node(5);
+    Node* t1 = new Node(4);
+    Node* A = new Node(7);
+    Node* t2 = new Node(6);
+    Node* t3 = new Node(8);
 
-    root.set_left(&t1);
-    root.set_right(&A);
-    root.set_height(6);
+    root->set_left(t1);
+    root->set_right(A);
+    root->set_height(6);
 
-    A.set_left(&t2);
-    A.set_right(&t3);
-    A.set_height(5);
+    A->set_left(t2);
+    A->set_right(t3);
+    A->set_height(5);
 
-    t1.set_height(3);
-    t2.set_height(3);
-    t3.set_height(4);
+    t1->set_height(3);
+    t2->set_height(3);
+    t3->set_height(4);
 
 /*
  creating tree
@@ -81,13 +77,13 @@ TEST(AVL_test, normalLeftRotation){
    / \
   t1  t2
  */
-    AVL_test tester(&root);
-    Node *new_root = tester.rotate_left(&root);
-    ASSERT_EQ(&A,new_root);
-    ASSERT_EQ(&t3,new_root->get_right());
-    ASSERT_EQ(&root,new_root->get_left());
-    ASSERT_EQ(&t1,new_root->get_left()->get_left());
-    ASSERT_EQ(&t2,new_root->get_left()->get_right());
+    AVL_test tester(root);
+    Node *new_root = tester.rotate_left(root);
+    ASSERT_EQ(A,new_root);
+    ASSERT_EQ(t3,new_root->get_right());
+    ASSERT_EQ(root,new_root->get_left());
+    ASSERT_EQ(t1,new_root->get_left()->get_left());
+    ASSERT_EQ(t2,new_root->get_left()->get_right());
 
     //Testing heights
     ASSERT_EQ(5,new_root->get_height());
@@ -100,23 +96,23 @@ TEST(AVL_test, normalLeftRotation){
 }
 
 TEST(AVL_test, normalRightRotation){
-    Node root(5);
-    Node t1(4);
-    Node A(7);
-    Node t2(6);
-    Node t3(8);
+    Node *root = new Node(5);
+    Node* t1 = new Node(4);
+    Node *A = new Node(7);
+    Node* t2 = new Node(6);
+    Node* t3 = new Node(8);
 
-    root.set_left(&A);
-    root.set_right(&t3);
-    root.set_height(6);
+    root->set_left(A);
+    root->set_right(t3);
+    root->set_height(6);
 
-    A.set_left(&t1);
-    A.set_right(&t2);
-    A.set_height(5);
+    A->set_left(t1);
+    A->set_right(t2);
+    A->set_height(5);
 
-    t1.set_height(4);
-    t2.set_height(3);
-    t3.set_height(3);
+    t1->set_height(4);
+    t2->set_height(3);
+    t3->set_height(3);
 
 /*
  creating tree
@@ -134,13 +130,13 @@ TEST(AVL_test, normalRightRotation){
        / \
       t2  t3
  */
-    AVL_test tester(&root);
-    Node *new_root = tester.rotate_right(&root);
-    ASSERT_EQ(&A,new_root);
-    ASSERT_EQ(&root,new_root->get_right());
-    ASSERT_EQ(&t1,new_root->get_left());
-    ASSERT_EQ(&t2,new_root->get_right()->get_left());
-    ASSERT_EQ(&t3,new_root->get_right()->get_right());
+    AVL_test tester(root);
+    Node *new_root = tester.rotate_right(root);
+    ASSERT_EQ(A,new_root);
+    ASSERT_EQ(root,new_root->get_right());
+    ASSERT_EQ(t1,new_root->get_left());
+    ASSERT_EQ(t2,new_root->get_right()->get_left());
+    ASSERT_EQ(t3,new_root->get_right()->get_right());
 
     //Testing heights
     ASSERT_EQ(5,new_root->get_height());
@@ -151,34 +147,34 @@ TEST(AVL_test, normalRightRotation){
 }
 
 TEST(AVL_test, testBalance){
-    Node root(5);
-    Node A(7);
-    Node t3(8);
+    Node *root = new Node(5);
+    Node *A = new Node(7);
+    Node *t3 = new Node(8);
 
-    root.set_left(&A);
-    root.set_right(&t3);
-    root.set_height(5);
+    root->set_left(A);
+    root->set_right(t3);
+    root->set_height(5);
 
-    A.set_height(4);
+    A->set_height(4);
 
-    t3.set_height(4);
+    t3->set_height(4);
     /*
  creating tree
     root
     /  \
    A   t3
  */
-    AVL_test tester(&root);
-    ASSERT_EQ(0,tester.get_balance(&root));
+    AVL_test tester(root);
+    ASSERT_EQ(0,tester.get_balance(root));
     ASSERT_EQ(0,tester.get_balance(nullptr));
 
-    A.set_height(3);
-    ASSERT_EQ(-1,tester.get_balance(&root));
+    A->set_height(3);
+    ASSERT_EQ(-1,tester.get_balance(root));
 }
 TEST(AVL_test, balanceWithEmptyNode){
-    Node root(5);
-    AVL_test tester(&root);
-    ASSERT_EQ(0,tester.get_balance(&root));
+    Node *root = new Node(5);
+    AVL_test tester(root);
+    ASSERT_EQ(0,tester.get_balance(root));
 }
 TEST(AVL_test, balanceWithEmptyTree){
     AVL_test tester;

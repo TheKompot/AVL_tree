@@ -201,3 +201,15 @@ int AVL::get_balance(Node *n){
     }
     return 0;
 }
+
+AVL::~AVL(){
+    recursiveDestructor(root);
+}
+
+void AVL::recursiveDestructor(Node* n) {
+    if(n != nullptr){
+        recursiveDestructor(n->get_right());
+        recursiveDestructor(n->get_left());
+        delete n;
+    }
+}
